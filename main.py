@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score, mean_squared_error
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Load dataset
 df = pd.read_csv("train.csv")
@@ -29,7 +30,9 @@ y_pred = model.predict(X_test)
 
 # Evaluate
 print("R² Score:", r2_score(y_test, y_pred))
-print("RMSE:", mean_squared_error(y_test, y_pred, squared=False))
+
+rmse = np.sqrt(mean_squared_error(y_test, y_pred))
+print("RMSE:", rmse)
 
 # Plot
 plt.scatter(y_test, y_pred)
