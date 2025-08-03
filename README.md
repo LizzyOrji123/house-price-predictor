@@ -91,15 +91,6 @@ Plus a matplotlib plot showing actual vs predicted prices.
 
 ---
 
-## 🚀 Features You Can Add
-
-- Feature engineering (log transforms, polynomial features)
-- Missing data imputation
-- Hyperparameter tuning
-- Multiple algorithms (Random Forest, Gradient Boosting)
-- Deployment via Flask or Streamlit
-
----
 
 ## 🤝 Credits
 
